@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ﾛｸﾞｲﾝ</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button color="danger" fill="outline" (click)="onClickSignUp()">
+        ｻｲﾝｱｯﾌﾟ
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">ﾕｰｻﾞｰID</ion-label>
+        <ion-input type="text" name="username" [(ngModel)]="username" required></ion-input>
+        
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">ﾊﾟｽﾜｰﾄﾞ</ion-label>
+        <ion-input type="password" name="password" [(ngModel)]="password" required></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button type="submit" shape="block" color="primary" fill="outline">ｻｲﾝｲﾝ</ion-button>
+  </form>
+</ion-content>

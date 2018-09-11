@@ -1,7 +1,7 @@
-# serverless-webapp-template
-Template for web application of serverless framework for AWS
+# serverless-ionic-app
+serverless framework + ionic4 sample application
 
-## Resources
+## Serverless Resources
 * Lambda
 * API Gateway
 * DynamoDB

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button color="danger" fill="outline" (click)="onDismiss()">Close</ion-button>
+    </ion-buttons>
+    <ion-title>ｻｲﾝｱｯﾌﾟ</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <div *ngIf="!signupSuccess">
+    <form (ngSubmit)="onSubmitSignUp(signupForm)" #signupForm="ngForm">    
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">ﾕｰｻﾞｰID</ion-label>
+          <ion-input type="text" name="username" [(ngModel)]="username" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">ﾊﾟｽﾜｰﾄﾞ</ion-label>
+          <ion-input type="password" name="password" [(ngModel)]="password" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input type="email" name="email" [(ngModel)]="email" required></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <ion-button type="submit" shape="block" color="primary" fill="outline">ｻｲﾝｱｯﾌﾟ</ion-button>
+    </form>
+  </div>
+
+  <div class="confirmation" *ngIf="signupSuccess">
+    <form (ngSubmit)="onSubmitConfirmation(confirmForm.value)" #confirmForm="ngForm"> 
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">検証ｺｰﾄﾞ</ion-label>
+          <ion-input type="text" name="confirm" required [(ngModel)]="confirm"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <ion-button type="submit" shape="block" color="primary" fill="outline">検証</ion-button>
+    </form>
+  </div>
+</ion-content>

@@ -1,21 +1,25 @@
 {
-  "name": "serverless-webapp-template",
+  "name": "serverless-ionic-app",
   "version": "1.0.0",
-  "description": "Template for web application of serverless framework",
+  "description": "serverless framework + ionic sample application",
   "main": "handler.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/briete/serverless-webapp-template.git"
+    "url": "git+https://github.com/briete/serverless-ionic-app.git"
   },
   "author": "Naoya Sato <briete5814@example.com> (https://qiita.com/briete)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/briete/serverless-webapp-template/issues"
+    "url": "https://github.com/briete/serverless-ionic-app/issues"
   },
-  "homepage": "https://github.com/briete/serverless-webapp-template#readme",
+  "homepage": "https://github.com/briete/serverless-ionic-app#readme",
   "keywords": [
+    "serverless-framework",
     "aws",
-    "serverless framework",
-    "template"
+    "aws-lambda",
+    "aws-dynamodb",
+    "aws-apigateway",
+    "aws-cognito",
+    "aws-s3"
   ]
 }
